@@ -61,11 +61,13 @@ DOWNLOAD_DELAY = 1
 ITEM_PIPELINES = {
 #    "jumiascraper.pipelines.JumiascraperPipeline": 300,
     "jumiascraper.pipelines.PriceConverterPipeline":100,
-    "jumiascraper.pipelines.PriceToZarPipeline":200,
-    "jumiascraper.pipelines.DropNoPricePipeline":300,
-    "jumiascraper.pipelines.DuplicatesPipeline":400,
-    "jumiascraper.pipelines.CalculateSavingsPipeline":500,
+    "jumiascraper.pipelines.PriceToZARPipeline":200,
+    "jumiascraper.pipelines.CalculateSavingsPipeline":300,
+    "jumiascraper.pipelines.DropNoPricePipeline":400,
+    "jumiascraper.pipelines.DuplicatesPipeline":500,
+    'jumiascraper.pipelines.ValidateItemPipeline': 600,
 }
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

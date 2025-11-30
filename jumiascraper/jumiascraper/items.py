@@ -18,5 +18,7 @@ class JumiaProduct(scrapy.Item):
     brand = scrapy.Field()
     product_id = scrapy.Field()
 
+    currency = scrapy.Field()
+    price_zar = scrapy.Field
   
 
